@@ -27,4 +27,5 @@ public class TestTeamVelocityAAA {
         myTeam.sprintDays = 9;
         Assert.assertEquals("Sprint is 9 days long", 9.0, myTeam.getTeamVelocity(), 0.1);
     }
+
 }
