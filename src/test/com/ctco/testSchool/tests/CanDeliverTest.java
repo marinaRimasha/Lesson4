@@ -28,7 +28,7 @@ public class CanDeliverTest {
         team.addMember(tester1);
 
         Story story = new Story();
-        story.setStoryPoints(2);
+        story.setStoryPoints(20);
 
         team.backlog = new ArrayList<>(); //creating list of backlog
         team.backlog.add(story); //adding our story to list
@@ -54,9 +54,9 @@ public class CanDeliverTest {
         team.addMember(tester1);
 
         Story story1 = new Story();
-        story1.setStoryPoints(1);
+        story1.setStoryPoints(13);
         Story story2 = new Story();
-        story2.setStoryPoints(3);
+        story2.setStoryPoints(20);
 
         team.backlog = new ArrayList<>(); //creating list of backlog
         team.backlog.add(story1); //adding our story to list
@@ -67,7 +67,7 @@ public class CanDeliverTest {
     }
 
     @Test
-    public void cantDeliver() {
+    public void canNotDeliver() {
         Team team = new Team();
         Member developer1 = new Member();
         developer1.codinSkills = true;
@@ -82,7 +82,7 @@ public class CanDeliverTest {
         team.addMember(tester1);
 
         Story story1 = new Story();
-        story1.setStoryPoints(3);
+        story1.setStoryPoints(30);
 
         team.backlog = new ArrayList<>(); //creating list of backlog
         team.backlog.add(story1); //adding our story to list
