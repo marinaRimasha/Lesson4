@@ -4,7 +4,6 @@
     <list default="true" id="b60cb891-ff05-4fe5-9cf5-e2d19b54b056" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/tests/CanDeliverTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/tests/CanDeliverTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,12 +45,6 @@
         <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" />
       </list>
     </option>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="44" />
-    <option name="y" value="23" />
-    <option name="width" value="1636" />
-    <option name="height" value="956" />
   </component>
   <component name="ProjectId" id="1WyKmlSYLtrcWq8xNG1x8ThoJy7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -174,7 +167,7 @@
       <workItem from="1580057120246" duration="1743000" />
       <workItem from="1580058963456" duration="6648000" />
       <workItem from="1580113712984" duration="152000" />
-      <workItem from="1580116558697" duration="1573000" />
+      <workItem from="1580116558697" duration="2195000" />
     </task>
     <servers />
   </component>

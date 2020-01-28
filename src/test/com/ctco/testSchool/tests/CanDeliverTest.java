@@ -15,11 +15,11 @@ public class CanDeliverTest {
     @Test
     public void canDeliverStoryWithDefaultVelocity() {
         Team team = new Team();
-        Member developer1 = new Member();
+        Member developer1 = new Member(Member.type.DEV);
         developer1.codinSkills = true;
-        Member developer2 = new Member();
+        Member developer2 = new Member(Member.type.DEV);
         developer2.codinSkills = true;
-        Member tester1 = new Member(); //actually no value of adding this member as he doesn't code and won't be used in calculations
+        Member tester1 = new Member(Member.type.TEST); //actually no value of adding this member as he doesn't code and won't be used in calculations
         tester1.testingSkills = true; //he doesn't code and won't be used in calculations
         tester1.codinSkills = false; //to ignore this member out of calculation as he isn't a dev
 
@@ -40,12 +40,12 @@ public class CanDeliverTest {
     @Test
     public void canDeliverDifferentVelocitySeveralStories() {
         Team team = new Team();
-        Member developer1 = new Member();
+        Member developer1 = new Member(Member.type.DEV);
         developer1.codinSkills = true;
         developer1.velocity = 5;
-        Member developer2 = new Member();
+        Member developer2 = new Member(Member.type.DEV);
         developer2.codinSkills = true;
-        Member tester1 = new Member(); //actually no value of adding this member as he doesn't code and won't be used in calculations
+        Member tester1 = new Member(Member.type.TEST); //actually no value of adding this member as he doesn't code and won't be used in calculations
         tester1.testingSkills = true; //he doesn't code and won't be used in calculations
         tester1.codinSkills = false; //to ignore this member out of calculation as he isn't a dev
 
@@ -69,11 +69,12 @@ public class CanDeliverTest {
     @Test
     public void canNotDeliver() {
         Team team = new Team();
-        Member developer1 = new Member();
+        Member developer1 = new Member(Member.type.DEV);
         developer1.codinSkills = true;
-        Member developer2 = new Member();
+        Member developer2 = new Member(Member.type.DEV);
         developer2.codinSkills = true;
-        Member tester1 = new Member(); //actually no value of adding this member as he doesn't code and won't be used in calculations
+
+        Member tester1 = new Member(Member.type.TEST); //actually no value of adding this member as he doesn't code and won't be used in calculations
         tester1.testingSkills = true; //he doesn't code and won't be used in calculations
         tester1.codinSkills = false; //to ignore this member out of calculation as he isn't a dev
 
