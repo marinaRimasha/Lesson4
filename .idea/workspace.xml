@@ -189,10 +189,10 @@
       <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state x="573" y="247" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.972@0.23.1680.972" timestamp="1580222235710" />
-    <state x="137" y="103" width="1108" height="837" key="CommitChangelistDialog2" timestamp="1580220965896">
+    <state x="137" y="103" width="1108" height="837" key="CommitChangelistDialog2" timestamp="1580225137135">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
-    <state x="137" y="103" key="CommitChangelistDialog2/0.23.1680.972@0.23.1680.972" timestamp="1580220965896" />
+    <state x="137" y="103" key="CommitChangelistDialog2/0.23.1680.972@0.23.1680.972" timestamp="1580225137135" />
     <state x="137" y="103" width="1108" height="837" key="CommitChangelistDialog2/0.23.1680.973@0.23.1680.973" timestamp="1580220349358" />
     <state width="1576" height="290" key="GridCell.Tab.0.bottom" timestamp="1580225083642">
       <screen x="0" y="23" width="1680" height="972" />
@@ -222,6 +222,10 @@
     <state width="1358" height="148" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.963@0.23.1680.963" timestamp="1580118602424" />
     <state width="1358" height="148" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580204521691" />
     <state width="1358" height="148" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.973@0.23.1680.973" timestamp="1580211983928" />
+    <state x="435" y="233" key="Vcs.Push.Dialog.v2" timestamp="1580225142731">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state x="435" y="233" key="Vcs.Push.Dialog.v2/0.23.1680.972@0.23.1680.972" timestamp="1580225142731" />
     <state x="628" y="425" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580220294169">
       <screen x="0" y="23" width="1680" height="973" />
     </state>
