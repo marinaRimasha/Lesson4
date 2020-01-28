@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b60cb891-ff05-4fe5-9cf5-e2d19b54b056" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/ExerciseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/tests/CanDeliverTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/tests/CanDeliverTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/CanDeliverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/TestTeamVelocity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/TestTeamVelocity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/TestTeamVelocityAAA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/TestTeamVelocityAAA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/tests/CanDeliverTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/tests/TestTeamVelocity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/tests/TestTeamVelocityAAA.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +30,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -65,81 +73,82 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.CanDeliverTest.canDeliverStoryWithDefaultVelocity">
-    <configuration name="CanDeliverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ExerciseTest.testFifthTask">
+    <configuration name="ExerciseTest.testFifthTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ScrumTask" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ctco.testSchool.tests.*" />
+          <option name="PATTERN" value="com.ctco.testSchool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ctco.testSchool.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.tests.CanDeliverTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CanDeliverTest.canDeliverDifferentVelocitySeveralStories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ScrumTask" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ctco.testSchool.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ctco.testSchool.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.tests.CanDeliverTest" />
-      <option name="METHOD_NAME" value="canDeliverDifferentVelocitySeveralStories" />
+      <option name="PACKAGE_NAME" value="com.ctco.testSchool" />
+      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.ExerciseTest" />
+      <option name="METHOD_NAME" value="testFifthTask" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CanDeliverTest.canDeliverStoryWithDefaultVelocity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExerciseTest.testFourthTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ScrumTask" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ctco.testSchool.tests.*" />
+          <option name="PATTERN" value="com.ctco.testSchool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ctco.testSchool.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.tests.CanDeliverTest" />
-      <option name="METHOD_NAME" value="canDeliverStoryWithDefaultVelocity" />
+      <option name="PACKAGE_NAME" value="com.ctco.testSchool" />
+      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.ExerciseTest" />
+      <option name="METHOD_NAME" value="testFourthTask" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CanDeliverTest.canNotDeliver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExerciseTest.testFourthTask_negInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ScrumTask" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ctco.testSchool.tests.*" />
+          <option name="PATTERN" value="com.ctco.testSchool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ctco.testSchool.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.tests.CanDeliverTest" />
-      <option name="METHOD_NAME" value="canNotDeliver" />
+      <option name="PACKAGE_NAME" value="com.ctco.testSchool" />
+      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.ExerciseTest" />
+      <option name="METHOD_NAME" value="testFourthTask_negInt" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CanDeliverTest.cantDeliver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExerciseTest.testFourthTask_zero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ScrumTask" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ctco.testSchool.tests.*" />
+          <option name="PATTERN" value="com.ctco.testSchool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ctco.testSchool.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.tests.CanDeliverTest" />
-      <option name="METHOD_NAME" value="cantDeliver" />
+      <option name="PACKAGE_NAME" value="com.ctco.testSchool" />
+      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.ExerciseTest" />
+      <option name="METHOD_NAME" value="testFourthTask_zero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExerciseTest.testNoSuchWord_ThirdTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ScrumTask" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ctco.testSchool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ctco.testSchool" />
+      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.ExerciseTest" />
+      <option name="METHOD_NAME" value="testNoSuchWord_ThirdTask" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CanDeliverTest.canDeliverStoryWithDefaultVelocity" />
-        <item itemvalue="JUnit.CanDeliverTest.canNotDeliver" />
-        <item itemvalue="JUnit.CanDeliverTest.canDeliverDifferentVelocitySeveralStories" />
-        <item itemvalue="JUnit.CanDeliverTest.cantDeliver" />
-        <item itemvalue="JUnit.CanDeliverTest" />
+        <item itemvalue="JUnit.ExerciseTest.testFifthTask" />
+        <item itemvalue="JUnit.ExerciseTest.testFourthTask_negInt" />
+        <item itemvalue="JUnit.ExerciseTest.testFourthTask_zero" />
+        <item itemvalue="JUnit.ExerciseTest.testFourthTask" />
+        <item itemvalue="JUnit.ExerciseTest.testNoSuchWord_ThirdTask" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +177,7 @@
       <workItem from="1580057120246" duration="1743000" />
       <workItem from="1580058963456" duration="6648000" />
       <workItem from="1580113712984" duration="152000" />
-      <workItem from="1580116558697" duration="2938000" />
+      <workItem from="1580116558697" duration="8280000" />
     </task>
     <servers />
   </component>
@@ -176,26 +185,47 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1358" height="148" key="GridCell.Tab.0.bottom" timestamp="1580204521692">
+    <state x="573" y="247" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580222235710">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
+    <state x="573" y="247" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.972@0.23.1680.972" timestamp="1580222235710" />
+    <state x="137" y="103" width="1108" height="837" key="CommitChangelistDialog2" timestamp="1580220965896">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state x="137" y="103" key="CommitChangelistDialog2/0.23.1680.972@0.23.1680.972" timestamp="1580220965896" />
+    <state x="137" y="103" width="1108" height="837" key="CommitChangelistDialog2/0.23.1680.973@0.23.1680.973" timestamp="1580220349358" />
+    <state width="1576" height="290" key="GridCell.Tab.0.bottom" timestamp="1580225083642">
+      <screen x="0" y="23" width="1680" height="972" />
+    </state>
+    <state width="1576" height="290" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1580225083642" />
     <state width="1358" height="148" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.963@0.23.1680.963" timestamp="1580118602424" />
     <state width="1358" height="148" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580204521692" />
-    <state width="1358" height="148" key="GridCell.Tab.0.center" timestamp="1580204521691">
+    <state width="1358" height="148" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.973@0.23.1680.973" timestamp="1580211983928" />
+    <state width="1576" height="290" key="GridCell.Tab.0.center" timestamp="1580225083641">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
+    <state width="1576" height="290" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1580225083641" />
     <state width="1358" height="148" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.963@0.23.1680.963" timestamp="1580118602423" />
     <state width="1358" height="148" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580204521691" />
-    <state width="1358" height="148" key="GridCell.Tab.0.left" timestamp="1580204521690">
+    <state width="1358" height="148" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.973@0.23.1680.973" timestamp="1580211983927" />
+    <state width="1576" height="290" key="GridCell.Tab.0.left" timestamp="1580225083641">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
+    <state width="1576" height="290" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1580225083641" />
     <state width="1358" height="148" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.963@0.23.1680.963" timestamp="1580118602423" />
     <state width="1358" height="148" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580204521690" />
-    <state width="1358" height="148" key="GridCell.Tab.0.right" timestamp="1580204521691">
+    <state width="1358" height="148" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.973@0.23.1680.973" timestamp="1580211983927" />
+    <state width="1576" height="290" key="GridCell.Tab.0.right" timestamp="1580225083642">
       <screen x="0" y="23" width="1680" height="972" />
     </state>
+    <state width="1576" height="290" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1580225083642" />
     <state width="1358" height="148" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.963@0.23.1680.963" timestamp="1580118602424" />
     <state width="1358" height="148" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580204521691" />
+    <state width="1358" height="148" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.973@0.23.1680.973" timestamp="1580211983928" />
+    <state x="628" y="425" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580220294169">
+      <screen x="0" y="23" width="1680" height="973" />
+    </state>
+    <state x="628" y="425" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.973@0.23.1680.973" timestamp="1580220294169" />
   </component>
   <component name="masterDetails">
     <states>
