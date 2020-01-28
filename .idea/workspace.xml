@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b60cb891-ff05-4fe5-9cf5-e2d19b54b056" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ctco/testSchool/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/tests/CanDeliverTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/tests/CanDeliverTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.CanDeliverTest.canNotDeliver">
+  <component name="RunManager" selected="JUnit.CanDeliverTest.canDeliverStoryWithDefaultVelocity">
     <configuration name="CanDeliverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ScrumTask" />
       <extension name="coverage">
@@ -146,9 +147,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CanDeliverTest.canDeliverStoryWithDefaultVelocity" />
         <item itemvalue="JUnit.CanDeliverTest.canNotDeliver" />
         <item itemvalue="JUnit.CanDeliverTest.canDeliverDifferentVelocitySeveralStories" />
-        <item itemvalue="JUnit.CanDeliverTest.canDeliverStoryWithDefaultVelocity" />
         <item itemvalue="JUnit.CanDeliverTest.cantDeliver" />
         <item itemvalue="JUnit.CanDeliverTest" />
       </list>
@@ -167,7 +168,7 @@
       <workItem from="1580057120246" duration="1743000" />
       <workItem from="1580058963456" duration="6648000" />
       <workItem from="1580113712984" duration="152000" />
-      <workItem from="1580116558697" duration="2195000" />
+      <workItem from="1580116558697" duration="2938000" />
     </task>
     <servers />
   </component>
@@ -175,22 +176,26 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1358" height="148" key="GridCell.Tab.0.bottom" timestamp="1580118602424">
-      <screen x="0" y="23" width="1680" height="963" />
+    <state width="1358" height="148" key="GridCell.Tab.0.bottom" timestamp="1580204521692">
+      <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1358" height="148" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.963@0.23.1680.963" timestamp="1580118602424" />
-    <state width="1358" height="148" key="GridCell.Tab.0.center" timestamp="1580118602423">
-      <screen x="0" y="23" width="1680" height="963" />
+    <state width="1358" height="148" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580204521692" />
+    <state width="1358" height="148" key="GridCell.Tab.0.center" timestamp="1580204521691">
+      <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1358" height="148" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.963@0.23.1680.963" timestamp="1580118602423" />
-    <state width="1358" height="148" key="GridCell.Tab.0.left" timestamp="1580118602423">
-      <screen x="0" y="23" width="1680" height="963" />
+    <state width="1358" height="148" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580204521691" />
+    <state width="1358" height="148" key="GridCell.Tab.0.left" timestamp="1580204521690">
+      <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1358" height="148" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.963@0.23.1680.963" timestamp="1580118602423" />
-    <state width="1358" height="148" key="GridCell.Tab.0.right" timestamp="1580118602424">
-      <screen x="0" y="23" width="1680" height="963" />
+    <state width="1358" height="148" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580204521690" />
+    <state width="1358" height="148" key="GridCell.Tab.0.right" timestamp="1580204521691">
+      <screen x="0" y="23" width="1680" height="972" />
     </state>
     <state width="1358" height="148" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.963@0.23.1680.963" timestamp="1580118602424" />
+    <state width="1358" height="148" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580204521691" />
   </component>
   <component name="masterDetails">
     <states>

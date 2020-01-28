@@ -37,7 +37,7 @@ public class Team {
     public boolean canDeliverQuality() {
         return members.stream()
                 .filter(item -> item.testingSkills)
-                .mapToDouble(i->i.velocity)
+                .mapToDouble(i->i.velocity*sprintDays)
                 .sum() >=  backlog.stream().mapToDouble(s->s.testPoints).sum();
     }
 
@@ -47,7 +47,7 @@ public class Team {
     public boolean canDeliver() {
         return members.stream()
                 .filter(item -> item.codinSkills)
-                .mapToDouble(i->i.velocity)
+                .mapToDouble(i->i.velocity*sprintDays)
                 .sum() >=  backlog.stream().mapToDouble(s->s.storyPoints).sum();
     }
 
