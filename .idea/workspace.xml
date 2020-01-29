@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b60cb891-ff05-4fe5-9cf5-e2d19b54b056" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/ExerciseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/BlackBoxTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/WhiteBoxTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/CanDeliverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/CanDeliverTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/TestTeamVelocity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/TestTeamVelocity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/ctco/testSchool/tests/TestTeamVelocityAAA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/TestTeamVelocityAAA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/tests/CanDeliverTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/tests/TestTeamVelocity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/tests/TestTeamVelocityAAA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/ctco/testSchool/ExerciseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/ctco/testSchool/ExerciseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/ExerciseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ctco/testSchool/ExerciseTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +68,8 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="JUnit.ExerciseTest.testFifthTask">
-    <configuration name="ExerciseTest.testFifthTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BlackBoxTests.canDeliverQuality_Negative">
+    <configuration name="BlackBoxTests.canDeliverQuality_HappyPath" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ScrumTask" />
       <extension name="coverage">
         <pattern>
@@ -83,14 +78,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ctco.testSchool" />
-      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.ExerciseTest" />
-      <option name="METHOD_NAME" value="testFifthTask" />
+      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.BlackBoxTests" />
+      <option name="METHOD_NAME" value="canDeliverQuality_HappyPath" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExerciseTest.testFourthTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BlackBoxTests.canDeliverQuality_Negative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ScrumTask" />
       <extension name="coverage">
         <pattern>
@@ -99,14 +94,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ctco.testSchool" />
-      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.ExerciseTest" />
-      <option name="METHOD_NAME" value="testFourthTask" />
+      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.BlackBoxTests" />
+      <option name="METHOD_NAME" value="canDeliverQuality_Negative" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExerciseTest.testFourthTask_negInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WhiteBoxTests.canDeliverQuality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ScrumTask" />
       <extension name="coverage">
         <pattern>
@@ -115,14 +110,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ctco.testSchool" />
-      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.ExerciseTest" />
-      <option name="METHOD_NAME" value="testFourthTask_negInt" />
+      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.WhiteBoxTests" />
+      <option name="METHOD_NAME" value="canDeliverQuality" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExerciseTest.testFourthTask_zero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WhiteBoxTests.canDeliverQuality_Negative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ScrumTask" />
       <extension name="coverage">
         <pattern>
@@ -131,14 +126,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ctco.testSchool" />
-      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.ExerciseTest" />
-      <option name="METHOD_NAME" value="testFourthTask_zero" />
+      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.WhiteBoxTests" />
+      <option name="METHOD_NAME" value="canDeliverQuality_Negative" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExerciseTest.testNoSuchWord_ThirdTask" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WhiteBoxTests.canDeliverQuality_SeveralStoriesAndTesters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ScrumTask" />
       <extension name="coverage">
         <pattern>
@@ -147,8 +142,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.ctco.testSchool" />
-      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.ExerciseTest" />
-      <option name="METHOD_NAME" value="testNoSuchWord_ThirdTask" />
+      <option name="MAIN_CLASS_NAME" value="com.ctco.testSchool.WhiteBoxTests" />
+      <option name="METHOD_NAME" value="canDeliverQuality_SeveralStoriesAndTesters" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -156,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ExerciseTest.testFifthTask" />
-        <item itemvalue="JUnit.ExerciseTest.testFourthTask_negInt" />
-        <item itemvalue="JUnit.ExerciseTest.testFourthTask_zero" />
-        <item itemvalue="JUnit.ExerciseTest.testFourthTask" />
-        <item itemvalue="JUnit.ExerciseTest.testNoSuchWord_ThirdTask" />
+        <item itemvalue="JUnit.BlackBoxTests.canDeliverQuality_Negative" />
+        <item itemvalue="JUnit.BlackBoxTests.canDeliverQuality_HappyPath" />
+        <item itemvalue="JUnit.WhiteBoxTests.canDeliverQuality_SeveralStoriesAndTesters" />
+        <item itemvalue="JUnit.WhiteBoxTests.canDeliverQuality_Negative" />
+        <item itemvalue="JUnit.WhiteBoxTests.canDeliverQuality" />
       </list>
     </recent_temporary>
   </component>
@@ -177,12 +172,24 @@
       <workItem from="1580057120246" duration="1743000" />
       <workItem from="1580058963456" duration="6648000" />
       <workItem from="1580113712984" duration="152000" />
-      <workItem from="1580116558697" duration="8280000" />
+      <workItem from="1580116558697" duration="17228000" />
     </task>
+    <task id="LOCAL-00001" summary="lesson5">
+      <created>1580225137868</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580225137868</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lesson5" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="573" y="247" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580222235710">
@@ -194,33 +201,45 @@
     </state>
     <state x="137" y="103" key="CommitChangelistDialog2/0.23.1680.972@0.23.1680.972" timestamp="1580225137135" />
     <state x="137" y="103" width="1108" height="837" key="CommitChangelistDialog2/0.23.1680.973@0.23.1680.973" timestamp="1580220349358" />
-    <state width="1576" height="290" key="GridCell.Tab.0.bottom" timestamp="1580225083642">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state width="1576" height="285" key="GridCell.Tab.0.bottom" timestamp="1580334336714">
+      <screen x="0" y="23" width="1680" height="965" />
     </state>
-    <state width="1576" height="290" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1580225083642" />
+    <state width="1576" height="128" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1580330794133" />
+    <state width="1576" height="285" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1580334336714" />
+    <state width="1576" height="158" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1580334026362" />
+    <state width="1576" height="186" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1580226184358" />
     <state width="1358" height="148" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.963@0.23.1680.963" timestamp="1580118602424" />
-    <state width="1358" height="148" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580204521692" />
+    <state width="1576" height="421" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580287896138" />
     <state width="1358" height="148" key="GridCell.Tab.0.bottom/1680.23.1920.1057/0.23.1680.973@0.23.1680.973" timestamp="1580211983928" />
-    <state width="1576" height="290" key="GridCell.Tab.0.center" timestamp="1580225083641">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state width="1576" height="285" key="GridCell.Tab.0.center" timestamp="1580334336713">
+      <screen x="0" y="23" width="1680" height="965" />
     </state>
-    <state width="1576" height="290" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1580225083641" />
+    <state width="1576" height="128" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1580330794133" />
+    <state width="1576" height="285" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1580334336713" />
+    <state width="1576" height="158" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1580334026361" />
+    <state width="1576" height="186" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1580226184357" />
     <state width="1358" height="148" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.963@0.23.1680.963" timestamp="1580118602423" />
-    <state width="1358" height="148" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580204521691" />
+    <state width="1576" height="421" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580287896137" />
     <state width="1358" height="148" key="GridCell.Tab.0.center/1680.23.1920.1057/0.23.1680.973@0.23.1680.973" timestamp="1580211983927" />
-    <state width="1576" height="290" key="GridCell.Tab.0.left" timestamp="1580225083641">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state width="1576" height="285" key="GridCell.Tab.0.left" timestamp="1580334336712">
+      <screen x="0" y="23" width="1680" height="965" />
     </state>
-    <state width="1576" height="290" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1580225083641" />
+    <state width="1576" height="128" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1580330794132" />
+    <state width="1576" height="285" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1580334336712" />
+    <state width="1576" height="158" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1580334026361" />
+    <state width="1576" height="186" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1580226184357" />
     <state width="1358" height="148" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.963@0.23.1680.963" timestamp="1580118602423" />
-    <state width="1358" height="148" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580204521690" />
+    <state width="1576" height="421" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580287896136" />
     <state width="1358" height="148" key="GridCell.Tab.0.left/1680.23.1920.1057/0.23.1680.973@0.23.1680.973" timestamp="1580211983927" />
-    <state width="1576" height="290" key="GridCell.Tab.0.right" timestamp="1580225083642">
-      <screen x="0" y="23" width="1680" height="972" />
+    <state width="1576" height="285" key="GridCell.Tab.0.right" timestamp="1580334336713">
+      <screen x="0" y="23" width="1680" height="965" />
     </state>
-    <state width="1576" height="290" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1580225083642" />
+    <state width="1576" height="128" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1580330794133" />
+    <state width="1576" height="285" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1580334336713" />
+    <state width="1576" height="158" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1580334026362" />
+    <state width="1576" height="186" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1580226184358" />
     <state width="1358" height="148" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.963@0.23.1680.963" timestamp="1580118602424" />
-    <state width="1358" height="148" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580204521691" />
+    <state width="1576" height="421" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.972@0.23.1680.972" timestamp="1580287896137" />
     <state width="1358" height="148" key="GridCell.Tab.0.right/1680.23.1920.1057/0.23.1680.973@0.23.1680.973" timestamp="1580211983928" />
     <state x="435" y="233" key="Vcs.Push.Dialog.v2" timestamp="1580225142731">
       <screen x="0" y="23" width="1680" height="972" />

@@ -87,20 +87,7 @@ public class ExerciseTest {
     public void testFifthTask() {
         FourthTask act = new FourthTask(-2,3);
         String actual = new FifthTask().isRectangle(act);
-        assertEquals(true, actual, "Incorrect value of perimeter");
+        assertEquals("true", actual, "Incorrect value of perimeter");
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
