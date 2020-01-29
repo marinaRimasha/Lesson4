@@ -76,7 +76,7 @@ public class BlackBoxTests {
 
         Story story2 = new Story();
         story2.setStoryPoints(8);
-        story2.setTestPoints(5);
+        story2.setTestPoints(3);
 
         team1.backlog = new ArrayList<>(); //creating list of backlog
         team1.backlog.add(story); //adding our story to list
@@ -86,8 +86,8 @@ public class BlackBoxTests {
         // as for now we should user canDeliver() to verify developers able to do their work in sprint and candeliverquality to verify testers work
         team1.sprintDays -= valueOf(story.storyPoints); //count how many days left for testing for the first story
         team2.sprintDays -= valueOf(story2.storyPoints); //count how many days left for testing for the second story
-        assertTrue(team1.canDeliverQuality(), "Team  could not deliver when they should ");//canDeliverQuality doesn't count developer delivery
-        assertFalse(team2.canDeliverQuality(), "Team could deliver when they should not");//canDeliverQuality doesn't count developer delivery
+        assertTrue(team1.canDeliverQuality(), "Team  could not deliver when they should! "+"DEV had: "+story.storyPoints+" TEST had: "+story.testPoints);//canDeliverQuality doesn't count developer delivery
+        assertFalse(team2.canDeliverQuality(), "Team could deliver when they should not! "+"DEV had: "+story2.storyPoints+" TEST had: "+story2.testPoints);//canDeliverQuality doesn't count developer delivery
     }
 
 }
