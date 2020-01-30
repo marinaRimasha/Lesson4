@@ -12,14 +12,11 @@ public class WhiteBoxTests {
     @Test
     public void canDeliverQuality_HappyPath() {
         Team team = new Team();
-        Member developer1 = new Member(Member.type.DEV);
-        Member tester1 = new Member(Member.type.TEST);
 
-        team.addMember(developer1);
+        Member tester1 = new Member(Member.type.TEST);
         team.addMember(tester1);
 
         Story story = new Story();
-        story.setStoryPoints(8); //doesn't bring any value to the test for now
         story.setTestPoints(2);
 
         team.backlog = new ArrayList<>(); //creating list of backlog
@@ -31,14 +28,12 @@ public class WhiteBoxTests {
     @Test
     public void canDeliverQuality_Negative() {
         Team team = new Team();
-        Member developer1 = new Member(Member.type.DEV);
+
         Member tester1 = new Member(Member.type.TEST);
 
-        team.addMember(developer1);
         team.addMember(tester1);
 
         Story story = new Story();
-        story.setStoryPoints(13); //doesn't bring any value to the test for now
         story.setTestPoints(13);
 
         team.backlog = new ArrayList<>(); //creating list of backlog
@@ -50,16 +45,13 @@ public class WhiteBoxTests {
     @Test
     public void canDeliverQuality_SeveralStoriesAndTesters() {
         Team team = new Team();
-        Member developer1 = new Member(Member.type.DEV);
         Member tester1 = new Member(Member.type.TEST);
         Member tester2 = new Member(Member.type.TEST);
 
-        team.addMember(developer1);
         team.addMember(tester1);
         team.addMember(tester2);
         Story story = new Story();
         Story story2 = new Story();
-        story.setStoryPoints(13); //doesn't bring any value to the test for now
         story.setTestPoints(8);
         story2.setTestPoints(10);
 
@@ -73,10 +65,9 @@ public class WhiteBoxTests {
     @Test
     public void canDeliverQuality_noStoriesAdded() {
         Team team = new Team();
-        Member developer1 = new Member(Member.type.DEV);
+
         Member tester1 = new Member(Member.type.TEST);
 
-        team.addMember(developer1);
         team.addMember(tester1);
         team.backlog = new ArrayList<>();//empty backlog
         assertTrue(team.canDeliverQuality(), "Team couldn't deliver when they should"); //canDeliverQuality doesn't count developer delivery
@@ -85,11 +76,9 @@ public class WhiteBoxTests {
     @Test
     public void canDeliverQuality_noVelocity() {
         Team team = new Team();
-        Member developer1 = new Member(Member.type.DEV); //isnt used in canDeliverQuality
         Member tester1 = new Member(Member.type.TEST);
 
         tester1.velocity = 0;
-        team.addMember(developer1);//isnt used in canDeliverQuality
         team.addMember(tester1);
 
         Story story = new Story();
@@ -97,21 +86,19 @@ public class WhiteBoxTests {
 
         team.backlog = new ArrayList<>();
         team.backlog.add(story);
-        assertFalse(team.canDeliverQuality(), "Team couldn't deliver when they should"); //canDeliverQuality doesn't count developer delivery
+        assertFalse(team.canDeliverQuality(), "Team could deliver when they should not"); //canDeliverQuality doesn't count developer delivery
     }
 
     @Test
     public void canDeliverQuality_noTesters() {
         Team team = new Team();
-        Member developer1 = new Member(Member.type.DEV); //isnt used in canDeliverQuality
-        team.addMember(developer1);//isnt used in canDeliverQuality
 
         Story story = new Story();
         story.setTestPoints(2);
 
         team.backlog = new ArrayList<>();
         team.backlog.add(story);
-        assertFalse(team.canDeliverQuality(), "Team couldn't deliver when they should"); //canDeliverQuality doesn't count developer delivery
+        assertFalse(team.canDeliverQuality(), "Team could deliver when they should not"); //canDeliverQuality doesn't count developer delivery
     }
 
     @Test
@@ -127,7 +114,7 @@ public class WhiteBoxTests {
         team.backlog = new ArrayList<>();
         team.backlog.add(story);
 
-        assertFalse(team.canDeliverQuality(), "Team couldn't deliver when they should"); //canDeliverQuality doesn't count developer delivery
+        assertFalse(team.canDeliverQuality(), "Team could deliver when they should not"); //canDeliverQuality doesn't count developer delivery
     }
 
 }
