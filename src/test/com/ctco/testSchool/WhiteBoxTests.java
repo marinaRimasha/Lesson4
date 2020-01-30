@@ -1,14 +1,13 @@
 package com.ctco.testSchool;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class WhiteBoxTests {
-
 
     @Test
     public void canDeliverQuality_HappyPath() {
@@ -69,6 +68,66 @@ public class WhiteBoxTests {
         team.backlog.add(story2);
 
         assertTrue(team.canDeliverQuality(), "Team couldn't deliver when they should"); //canDeliverQuality doesn't count developer delivery
+    }
+
+    @Test
+    public void canDeliverQuality_noStoriesAdded() {
+        Team team = new Team();
+        Member developer1 = new Member(Member.type.DEV);
+        Member tester1 = new Member(Member.type.TEST);
+
+        team.addMember(developer1);
+        team.addMember(tester1);
+        team.backlog = new ArrayList<>();//empty backlog
+        assertTrue(team.canDeliverQuality(), "Team couldn't deliver when they should"); //canDeliverQuality doesn't count developer delivery
+    }
+
+    @Test
+    public void canDeliverQuality_noVelocity() {
+        Team team = new Team();
+        Member developer1 = new Member(Member.type.DEV); //isnt used in canDeliverQuality
+        Member tester1 = new Member(Member.type.TEST);
+
+        tester1.velocity = 0;
+        team.addMember(developer1);//isnt used in canDeliverQuality
+        team.addMember(tester1);
+
+        Story story = new Story();
+        story.setTestPoints(2);
+
+        team.backlog = new ArrayList<>();
+        team.backlog.add(story);
+        assertFalse(team.canDeliverQuality(), "Team couldn't deliver when they should"); //canDeliverQuality doesn't count developer delivery
+    }
+
+    @Test
+    public void canDeliverQuality_noTesters() {
+        Team team = new Team();
+        Member developer1 = new Member(Member.type.DEV); //isnt used in canDeliverQuality
+        team.addMember(developer1);//isnt used in canDeliverQuality
+
+        Story story = new Story();
+        story.setTestPoints(2);
+
+        team.backlog = new ArrayList<>();
+        team.backlog.add(story);
+        assertFalse(team.canDeliverQuality(), "Team couldn't deliver when they should"); //canDeliverQuality doesn't count developer delivery
+    }
+
+    @Test
+    public void canDeliverQuality_noSprint() {
+        Team team = new Team();
+        team.sprintDays = 0;
+        Member tester1 = new Member(Member.type.DEV); //isnt used in canDeliverQuality
+        team.addMember(tester1);//isnt used in canDeliverQuality
+
+        Story story = new Story();
+        story.setTestPoints(2);
+
+        team.backlog = new ArrayList<>();
+        team.backlog.add(story);
+
+        assertFalse(team.canDeliverQuality(), "Team couldn't deliver when they should"); //canDeliverQuality doesn't count developer delivery
     }
 
 }
