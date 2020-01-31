@@ -117,4 +117,21 @@ public class WhiteBoxTests {
         assertFalse(team.canDeliverQuality(), "Team could deliver when they should not"); //canDeliverQuality doesn't count developer delivery
     }
 
+    @Test
+    public void canDeliverQuality_OneStoryTwoTesters() {
+        Team team = new Team();
+
+        Member tester1 = new Member(Member.type.TEST);
+        Member tester2 = new Member(Member.type.TEST);
+
+        team.addMember(tester1);
+        team.addMember(tester2);
+        Story story = new Story();
+        story.setTestPoints(13);
+        team.backlog = new ArrayList<>();
+        team.backlog.add(story);
+
+        assertTrue(team.canDeliverQuality(), "Team couldn't deliver when they should"); //canDeliverQuality doesn't count story per tester, counts storypoint / velocity of all
+    }
+
 }
