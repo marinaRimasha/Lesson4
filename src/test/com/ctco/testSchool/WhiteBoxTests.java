@@ -134,4 +134,22 @@ public class WhiteBoxTests {
         assertTrue(team.canDeliverQuality(), "Team couldn't deliver when they should"); //canDeliverQuality doesn't count story per tester, counts storypoint / velocity of all
     }
 
+    @Test
+    public void canDeliverQuality_OneTesterTwoStories() {
+        Team team = new Team();
+
+        Member tester1 = new Member(Member.type.TEST);
+        team.addMember(tester1);
+
+        Story story = new Story();
+        Story story2 = new Story();
+        story.setTestPoints(8);
+        story2.setTestPoints(2);
+        team.backlog = new ArrayList<>();
+        team.backlog.add(story);
+        team.backlog.add(story2);
+
+        assertTrue(team.canDeliverQuality(), "Team couldn't deliver when they should"); //canDeliverQuality doesn't count story per tester, counts storypoint / velocity of all
+    }
+
 }
