@@ -3,9 +3,10 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class Main { //java and class has same name
     public static void Main(String[] args){
-
+    class Check {  //kind of subtype, e..g table, white table
+        }
     }
 
 }
@@ -43,6 +44,7 @@ class FourthTask {
         return 2*a + 2*b;
     }
 }
+
 
 class FifthTask {
     public String isRectangle(FourthTask fourthTask) {
