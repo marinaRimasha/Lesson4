@@ -100,7 +100,7 @@ public class BlackBoxTests {
     }
 
       @Test
-    public void canDeliverQuality_BigTeamNegative() { //can't deliver as testers will not have enough time, there is only 1 tester per story
+    public void canDeliverQuality_NotEnoughTestingTime() { //can't deliver as testers will not have enough time, there is only 1 tester per story
         Team team = new Team();
         Member developer1 = new Member(Member.type.DEV);
         Member developer2 = new Member(Member.type.DEV);
@@ -130,7 +130,7 @@ public class BlackBoxTests {
     }
 
        @Test
-    public void canDeliverQuality_BigTeamNegative() { //can't deliver as developers will not have enough time, there is only 1 developer per story
+    public void canDeliverQuality_NotEnoughTimeForDevelopers() { //can't deliver as developers will not have enough time, there is only 1 developer per story
         Team team = new Team();
         Member developer1 = new Member(Member.type.DEV);
         Member developer2 = new Member(Member.type.DEV);
@@ -176,7 +176,7 @@ public class BlackBoxTests {
     }
 
     @Test
-    public void canDeliverQuality_Zeros() {
+    public void canDeliverQuality_ZeroPoints() {
         Team team = new Team();
         Member developer1 = new Member(Member.type.DEV);
         Member tester1 = new Member(Member.type.TEST);
@@ -265,11 +265,13 @@ public class BlackBoxTests {
         Member developer1 = new Member(Member.type.DEV);
         Member developer2 = new Member(Member.type.DEV);
         Member tester1 = new Member(Member.type.TEST);
+        Member tester2 = new Member(Member.type.TEST);
         tester1.velocity = 0;
 
         team.addMember(developer1);
         team.addMember(developer2);
         team.addMember(tester1);
+        team.addMember(tester2);
 
         Story story = new Story();
         Story story2 = new Story();
