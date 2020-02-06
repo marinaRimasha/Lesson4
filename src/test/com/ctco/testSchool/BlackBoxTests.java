@@ -42,6 +42,7 @@ public class BlackBoxTests {
 
         try {
             assertEquals( false, team.canDeliverQuality(), "Team  could deliver when they should not");
+            fail("Expected exception has not been thrown");
 
         } catch (IllegalArgumentException e) {
             assertEquals("Velocity can't be more than 1", e.getMessage(), "Exception not caught");
@@ -73,6 +74,7 @@ public class BlackBoxTests {
 
         try {
             assertEquals( true, team.canDeliverQuality(), "Team  could deliver when they should not");
+            fail("Expected exception has not been thrown");
 
         } catch (IllegalArgumentException e) {
             assertEquals("Velocity should be positive", e.getMessage(), "Exception not caught");
@@ -106,6 +108,7 @@ public class BlackBoxTests {
 
         try {
             assertEquals(true, team.canDeliverQuality(), "Team  could deliver when they should not");
+            fail("Expected exception has not been thrown");
 
         } catch (IllegalArgumentException e) {
             assertEquals("Velocity should be positive", e.getMessage(), "Exception not caught");
@@ -133,6 +136,7 @@ public class BlackBoxTests {
 
         try {
             assertEquals( false, team.canDeliverQuality(), "Team  could deliver when they should not");
+            fail("Expected exception has not been thrown");
 
         } catch (IllegalArgumentException e) {
             assertEquals("Velocity should be positive", e.getMessage(), "Exception not caught");
