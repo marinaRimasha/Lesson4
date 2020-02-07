@@ -1,12 +1,10 @@
 package com.ctco.testSchool;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 
-import static java.lang.Integer.valueOf;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class BlackBoxTests {
@@ -41,8 +39,8 @@ public class BlackBoxTests {
         team.backlog.add(story2);
 
         try {
-            assertEquals( false, team.canDeliverQuality(), "Team  could deliver when they should not");
-            fail("Expected exception has not been thrown");
+            assertEquals(false, team.canDeliverQuality(), "Team  could deliver when they should not");
+            fail("Expected exception: " +IllegalArgumentException.class.getSimpleName() + " has not been thrown");
 
         } catch (IllegalArgumentException e) {
             assertEquals("Velocity can't be more than 1", e.getMessage(), "Exception not caught");
@@ -73,8 +71,8 @@ public class BlackBoxTests {
         team.backlog.add(story); //adding our story to list
 
         try {
-            assertEquals( true, team.canDeliverQuality(), "Team  could deliver when they should not");
-            fail("Expected exception has not been thrown");
+            assertEquals(true, team.canDeliverQuality(), "Team  could deliver when they should not");
+            fail("Expected exception: " +IllegalArgumentException.class.getSimpleName() + " has not been thrown");
 
         } catch (IllegalArgumentException e) {
             assertEquals("Velocity should be positive", e.getMessage(), "Exception not caught");
@@ -108,13 +106,12 @@ public class BlackBoxTests {
 
         try {
             assertEquals(true, team.canDeliverQuality(), "Team  could deliver when they should not");
-            fail("Expected exception has not been thrown");
+            fail("Expected exception: " +IllegalArgumentException.class.getSimpleName() + " has not been thrown");
 
         } catch (IllegalArgumentException e) {
             assertEquals("Velocity should be positive", e.getMessage(), "Exception not caught");
         }
     }
-
 
 
     @Test
@@ -135,8 +132,8 @@ public class BlackBoxTests {
         team.backlog.add(story); //adding our story to list
 
         try {
-            assertEquals( false, team.canDeliverQuality(), "Team  could deliver when they should not");
-            fail("Expected exception has not been thrown");
+            assertEquals(false, team.canDeliverQuality(), "Team  could deliver when they should not");
+            fail("Expected exception: " +IllegalArgumentException.class.getSimpleName() + " has not been thrown");
 
         } catch (IllegalArgumentException e) {
             assertEquals("Velocity should be positive", e.getMessage(), "Exception not caught");
@@ -161,7 +158,7 @@ public class BlackBoxTests {
         team.backlog.add(story); //adding our story to list
 
         try {
-            assertEquals( false, team.canDeliverQuality(), "Team  could deliver when they should not");
+            assertEquals(false, team.canDeliverQuality(), "Team  could deliver when they should not");
             fail("Check sprint is >2");
 
         } catch (IllegalArgumentException e) {
@@ -275,11 +272,11 @@ public class BlackBoxTests {
         team.backlog = new ArrayList<>(); //creating list of backlog
         team.backlog.add(story); //adding our story to list
         team.backlog.add(story2);
-        assertEquals( false, team.canDeliverQuality(), "Team  could deliver when they should not");
+        assertEquals(false, team.canDeliverQuality(), "Team  could deliver when they should not");
     }
 
 
-       @Test
+    @Test
     public void canDeliverQuality_NotEnoughTimeForDevelopers() { //can't deliver as developers will not have enough time, there is only 1 developer per story //check this one
         Team team = new Team();
         Member developer1 = new Member(Member.type.DEV);
@@ -305,12 +302,12 @@ public class BlackBoxTests {
         team.backlog.add(story); //adding our story to list
         team.backlog.add(story2);
 
-           try {
-               assertEquals( false, team.canDeliverQuality(), "Team  could deliver when they should not");
+        try {
+            assertEquals(false, team.canDeliverQuality(), "Team  could deliver when they should not");
 
-           } catch (IllegalArgumentException e) {
-               assertEquals("Velocity can't be more than 1", e.getMessage(), "Exception not caught");
-           }
+        } catch (IllegalArgumentException e) {
+            assertEquals("Velocity can't be more than 1", e.getMessage(), "Exception not caught");
+        }
     }
 
 
@@ -328,7 +325,7 @@ public class BlackBoxTests {
         team.backlog = new ArrayList<>(); //creating list of backlog
         team.backlog.add(story); //adding our story to list
 
-        assertEquals( false, team.canDeliverQuality(), "Team  could deliver when they should not");
+        assertEquals(false, team.canDeliverQuality(), "Team  could deliver when they should not");
     }
 
     @Test
@@ -345,18 +342,18 @@ public class BlackBoxTests {
 
         team.backlog = new ArrayList<>(); //creating list of backlog
         team.backlog.add(story); //adding our story to list
-        assertEquals( true, team.canDeliverQuality(), "Team  could deliver when they should not");
+        assertEquals(true, team.canDeliverQuality(), "Team  could deliver when they should not");
     }
 
 
     @Test
     public void Test1() {
-        assertEquals(3,  Team.getPrimeNumberClosesTo(3), "");
+        assertEquals(3, Team.getPrimeNumberClosesTo(3), "");
     }
 
     @Test
     public void Test2() {
-        assertEquals(7,  Team.getPrimeNumberClosesTo(8), "returned incorrect number");
+        assertEquals(7, Team.getPrimeNumberClosesTo(8), "returned incorrect number");
     }
 
     @Test
@@ -367,7 +364,7 @@ public class BlackBoxTests {
 //        } else {
 //            fail("Returned "+result+" expected was 7 or 11");
 //        }
-        assertTrue(((result == 7 )|| (result == 11 )), "Returned "+result+" expected was 7 or 11");
+        assertTrue(((result == 7) || (result == 11)), "Returned " + result + " expected was 7 or 11");
     }
 
 //    @Test
@@ -378,14 +375,14 @@ public class BlackBoxTests {
     @Test
     public void TestDayPhase() {
         int localHour = LocalDateTime.now().getHour();
-        if ( (localHour == 8 )||  (localHour == 9) || (localHour == 10 ) ||(localHour == 11 )) {
-           assertEquals("Good morning world!",  Team.getHelloWorldText(), "Incorrect message: "+Team.getHelloWorldText());
-       } else if ( (localHour == 12 )||  (localHour == 13) || (localHour == 14 ) ||(localHour == 15 ) || (localHour == 16 )) {
-            assertEquals("Good day world!",  Team.getHelloWorldText(), "Incorrect message: "+Team.getHelloWorldText());
-        } else if (localHour == 17 ) {
-            assertEquals("Hello world!",  Team.getHelloWorldText(), "Incorrect message: "+Team.getHelloWorldText());
+        if ((localHour == 8) || (localHour == 9) || (localHour == 10) || (localHour == 11)) {
+            assertEquals("Good morning world!", Team.getHelloWorldText(), "Incorrect message: " + Team.getHelloWorldText());
+        } else if ((localHour == 12) || (localHour == 13) || (localHour == 14) || (localHour == 15) || (localHour == 16)) {
+            assertEquals("Good day world!", Team.getHelloWorldText(), "Incorrect message: " + Team.getHelloWorldText());
+        } else if (localHour == 17) {
+            assertEquals("Hello world!", Team.getHelloWorldText(), "Incorrect message: " + Team.getHelloWorldText());
         } else {
-            assertEquals("Good night world!",  Team.getHelloWorldText(), "Incorrect message: "+Team.getHelloWorldText());
+            assertEquals("Good night world!", Team.getHelloWorldText(), "Incorrect message: " + Team.getHelloWorldText());
         }
     }
 
